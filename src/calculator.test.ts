@@ -33,6 +33,6 @@ test("should handle different delimiters", () => {
 
 test("should throw an error for invalid input with different delimiters", () => {
   expect(() => add("//|\n1|2,3")).toThrow(
-    "'|' expected but ',' found at position 3"
+    "'|' expected but ',' found at position 3."
   );
 });
