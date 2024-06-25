@@ -20,3 +20,7 @@ test("should return sum for unknown number of arguments", () => {
 test("should handle newlines as separators", () => {
   expect(add("1\n2,3")).toBe(6);
 });
+
+test("should throw an error if the string ends with a separator", () => {
+  expect(() => add("1,2,")).toThrow("Invalid input: Trailing separator");
+});
